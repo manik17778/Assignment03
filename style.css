@@ -1,0 +1,105 @@
+/* Body styling */
+body {
+    background-color: #f8f8f8; /* Background color */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding to the body */
+    font-family: "Josefin Sans", sans-serif; /* Set font family */
+    font-optical-sizing: auto; /* Define font optical sizing */
+}
+
+/* Styles for the main heading */
+h1 {
+    text-align: center; /* Center align the heading */
+    font-family: fantasy; /* Change font family */
+    letter-spacing: 4px; /* Add letter spacing */
+    color: goldenrod; /* Text color */
+    text-shadow: 1px 5px 5px black; /* Add text shadow */
+}
+
+/* Styles for the form container */
+.container {
+    max-width: 500px; /* Set maximum width */
+    margin: 50px auto; /* Center the form horizontally */
+    padding: 30px; /* Add padding */
+    border-radius: 10px; /* Add border radius */
+    background-color: #ac0808; /* Form background color */
+    box-shadow: 10px 7px 6px rgb(0 0 0 / 60%); /* Add box shadow */
+    transition: box-shadow 0.3s; /* Add transition for box shadow */
+}
+
+/* Styles for labels */
+label {
+    margin-bottom: 10px; /* Add margin at the bottom */
+    font-weight: bold; /* Make labels bold */
+    color: #e1aa22; /* Label color */
+    font-size: 1.2em; /* Font size */
+    font-family: cursive; /* Set font family */
+}
+
+/* Styles for submit and button inputs */
+button {
+    padding: 12px 24px; /* Add padding */
+    background-color: #e1aa22; /* Button background color */
+    color: black; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s, transform 0.2s; /* Add transitions */
+    font-family: fantasy; /* Change font family */
+    text-align: center; /* Center align text */
+    margin-left: 11em; /* Add margin for positioning */
+}
+
+/* Hover styles for submit and button inputs */
+button:hover {
+    background-color: #45a049; /* Change background color on hover */
+    transform: translateY(-2px); /* Move button slightly on hover */
+}
+
+/* Styles for student info section */
+#studentInfo {
+    text-align: center; /* Center align text */
+    margin-bottom: 20px; /* Add margin at the bottom */
+    color: white; /* Text color */
+}
+
+/* Styles for pizza output section */
+#pizzaOutput {
+    margin-top: 20px; /* Add margin at the top */
+    padding: 20px; /* Add padding */
+    color: white; /* Text color */
+    border-radius: 5px; /* Add border radius */
+}
+
+/* Grid layout for checkboxes */
+.checkbox-grid {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Define grid columns */
+    gap: 10px; /* Add gap between grid items */
+}
+
+.checkbox-grid label {
+    display: block; /* Display labels as blocks */
+}
+
+/* Smaller size for options */
+select, input[type="checkbox"], input[type="radio"] {
+    font-size: 14px; /* Set font size */
+}
+
+/* Text shadow for checkboxes, radios, and labels */
+input[type="checkbox"], input[type="radio"], label {
+    text-shadow: 1px 5px 5px black; /* Add text shadow */
+}
+
+/* Background gradient */
+.background-gradient {
+    position: fixed; /* Fix the position */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    z-index: -1; /* Ensure the gradient is behind other content */
+    background: linear-gradient(to bottom, #e1aa22, #ac0808); /* Gradient from top to bottom */
+}

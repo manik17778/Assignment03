@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <!-- Linking css file -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Linking google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background gradient div class-->
+    <div class="background-gradient"></div>
+    <!-- Container for the form -->
+    <div class="container">
+        <!-- Main heading -->
+        <h1>Pizza Order Form</h1>
+        <!-- Pizza order form -->
+        <form id="pizzaForm">
+            <!-- Size selection -->
+            <label for="size">Size:</label>
+            <select id="size" name="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select><br>
+            
+            <!-- Crust selection -->
+            <label for="crust">Crust:</label>
+            <select id="crust" name="crust">
+                <option value="thin">Thin</option>
+                <option value="thick">Thick</option>
+                <option value="stuffed">Stuffed</option>
+            </select><br>
+            
+            <!-- Meat selection -->
+            <label for="meat">Meat:</label><br>
+            <input type="checkbox" id="pepperoni" name="meat" value="pepperoni">
+            <label for="pepperoni">Pepperoni</label><br>
+            <input type="checkbox" id="sausage" name="meat" value="sausage">
+            <label for="sausage">Sausage</label><br>
+            <input type="checkbox" id="bacon" name="meat" value="bacon">
+            <label for="bacon">Bacon</label><br>
+            
+            <!-- Veggies selection -->
+            <label for="veggies">Veggies:</label><br>
+            <input type="checkbox" id="mushrooms" name="veggies" value="mushrooms">
+            <label for="mushrooms">Mushrooms</label><br>
+            <input type="checkbox" id="onions" name="veggies" value="onions">
+            <label for="onions">Onions</label><br>
+            <input type="checkbox" id="bellPeppers" name="veggies" value="bellPeppers">
+            <label for="bellPeppers">Bell Peppers</label>
+            <input type="checkbox" id="BananaPeppers " name="veggies" value="BananaPeppers">
+            <label for="bellPeppers">Banana Peppers</label>
+            <input type="checkbox" id="Green chilli " name="veggies" value="GreenChilli">
+            <label for="bellPeppers">chilli</label>
+            
+            <br>
+            
+            <!-- Cheese selection -->
+            <label for="cheese">Cheese:</label><br>
+            <input type="radio" id="regular" name="cheese" value="regular" checked>
+            <label for="regular">Regular</label><br>
+            <input type="radio" id="extra" name="cheese" value="extra">
+            <label for="extra">Extra</label><br>
+            
+            
+            <!-- Order button -->
+            <button type="button" onclick="orderPizza()">Order</button>
+        </form>
+        <!-- Placeholder for student info -->
+        <p id="studentInfo"></p>
+        <!-- Placeholder for pizza order output -->
+        <div id="pizzaOutput"></div>
+    </div>
+
+    <!-- Linking Js Script file  -->
+    <script src="./script.js" defer></script>
+</body>
+</html>
